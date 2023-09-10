@@ -60,6 +60,8 @@ const SideGroup = () => {
           onChange={(e) => setGroup(e.target.value)}
         />
         <button>add group</button>
+
+        <h1>sdsdfsdjkfhks</h1>
       </form>
     </div>
   );
