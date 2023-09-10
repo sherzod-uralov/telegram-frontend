@@ -151,4 +151,101 @@
   display: flex;
   -moz-column-gap: 8px;
        column-gap: 8px;
+}
+
+/* This is a sample CSS stylesheet for the SideGroup component */
+/* Style for the container div */
+.container {
+  padding: 20px;
+}
+
+/* Style for the group list */
+.group-list {
+  margin-bottom: 20px;
+}
+
+/* Style for individual group items */
+.group-item {
+  cursor: pointer;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease;
+}
+
+.group-item:hover {
+  background-color: #e0e0e0;
+}
+
+/* Style for the "add group" form */
+.add-group-form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.add-group-form input[type=text] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.add-group-form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-group-form button:hover {
+  background-color: #0056b3;
+}
+
+/* This is a sample CSS stylesheet for the Groups component */
+/* Style for the container div */
+.container {
+  padding: 20px;
+}
+
+/* Style for individual messages */
+.message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+}
+
+/* Style for the message input form */
+.message-form {
+  margin-top: 20px;
+}
+
+.message-form input[type=text] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.message-form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.message-form button:hover {
+  background-color: #0056b3;
 }/*# sourceMappingURL=main.css.map */
