@@ -9,7 +9,7 @@
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0px 10px;
 }
@@ -153,99 +153,106 @@
        column-gap: 8px;
 }
 
-/* This is a sample CSS stylesheet for the SideGroup component */
-/* Style for the container div */
-.container {
+.input_custom {
+  position: relative;
+}
+.input_custom svg {
+  position: absolute;
+  top: 11px;
+  left: 12px;
+}
+.input_custom input {
+  width: 300px;
+  border: none;
+  background-color: #3291ec;
+  height: 36px;
+  border-radius: 18px;
+  outline: none;
+}
+
+.sidebar_burger {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px 8px 10px;
+}
+
+.burger {
+  font-size: 25px;
+  border: none;
+}
+
+.sidebar {
+  width: 400px;
+  background-color: #ffacac;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #333;
+  color: white;
   padding: 20px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
 }
 
-/* Style for the group list */
-.group-list {
-  margin-bottom: 20px;
-}
-
-/* Style for individual group items */
-.group-item {
-  cursor: pointer;
-  margin-bottom: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f0f0f0;
-  transition: background-color 0.3s ease;
-}
-
-.group-item:hover {
-  background-color: #e0e0e0;
-}
-
-/* Style for the "add group" form */
-.add-group-form {
+.sidebar_burger {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
 }
 
-.add-group-form input[type=text] {
-  flex: 1;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+.burger {
+  font-size: 24px;
+  cursor: pointer;
   margin-right: 10px;
 }
 
-.add-group-form button {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
+.input_custom {
+  display: flex;
+  align-items: center;
+  background-color: #444;
+  padding: 5px 10px;
   border-radius: 5px;
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.add-group-form button:hover {
-  background-color: #0056b3;
-}
-
-/* This is a sample CSS stylesheet for the Groups component */
-/* Style for the container div */
-.container {
-  padding: 20px;
-}
-
-/* Style for individual messages */
-.message {
   margin-bottom: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f0f0f0;
 }
 
-/* Style for the message input form */
-.message-form {
-  margin-top: 20px;
-}
-
-.message-form input[type=text] {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.message-form button {
-  background-color: #007bff;
-  color: #fff;
+input[type=text] {
   border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-top: 10px;
+  background: none;
+  outline: none;
+  color: white;
+  width: 100%;
 }
 
-.message-form button:hover {
-  background-color: #0056b3;
+.group_card h2 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.group_card:hover {
+  background-color: #666;
+}
+
+.group_card {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+}
+
+.group_name {
+  background-color: #444;
+}
+
+.group_image_placeholder {
+  border-radius: 50%;
+  width: 60px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f6da1;
+  display: flex;
+  height: 60px;
 }/*# sourceMappingURL=main.css.map */

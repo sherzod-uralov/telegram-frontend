@@ -1,8 +1,8 @@
 import React from 'react';
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import { BrowserRouter,Route, Routes } from 'react-router-dom';
 import Login from '../components/Login';
-import Sidebar from '../components/Register';
-import Groups from '../components/group'; // Correct the component name to 'Groups'
+import Register from '../components/Register';
+import Groups from '../components/group'; 
 import SideGroup from '../components/SideGroup';
 const RouterBrowser = () => {
   const token = localStorage.getItem('token');
@@ -10,14 +10,11 @@ const RouterBrowser = () => {
 
   return (
     <BrowserRouter>
-      <SideGroup />
+    {token ? <SideGroup/> : ''}
       <Routes>
-        <Route path="/" element={<Sidebar />} />
+        {token ? <Route path="/group" element={<Groups />} /> : <Route path="/" element={<Register/>} />}
+        <Route path="/login" element={<Login />} />
         <Route path="/group/:id" element={<Groups />} />
-        <Route
-          path="/login"
-          element={token ? <Navigate to="/" /> : <Login />}
-        />
       </Routes>
     </BrowserRouter>
   );

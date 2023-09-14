@@ -4,7 +4,7 @@ import "../style/main.css";
 import tgImage from "../images/telegram.png";
 import { Navigate, useNavigate } from "react-router-dom";
 
-const Sidebar = () => {
+const Register = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [token, setToken] = useState(localStorage.getItem("token") || "");
@@ -15,7 +15,7 @@ const Sidebar = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://192.168.100.116:7000/register",
+        "http://10.10.1.93:4050/Register",
         {
           username,
           password,
@@ -92,4 +92,4 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+export default Register;

@@ -11,13 +11,14 @@ const Groups = () => {
     async function fetchData() {
       try {
         const res = await axios.get(
-          `http://192.168.100.116:7000/groupmessage/${id}`,
+          `http://10.10.1.93:4050/groupmessage/${id}`,
           {
             headers: {
               token: localStorage.getItem("token"),
             },
           }
         );
+        console.log(res);
         setData(res.data);
       } catch (error) {
         console.error(error);
@@ -25,11 +26,11 @@ const Groups = () => {
     }
     console.log(data);
     fetchData();
-  }, [id,data]);
+  }, [id]);
 const formSub = async (e) => {
   e.preventDefault();
   try {
-    await axios.post("http://192.168.100.116:7000/groupmessage", {
+    await axios.post("http://10.10.1.93:4050/groupmessage", {
         group_message: message,
         group_id:id
       },
@@ -45,9 +46,12 @@ return (
   <div className="container">
     <div>
       {data?.messages?.map((message, index) => (
+          <div>
+            <h2>{message?.User?.username}</h2>
         <div className="message" key={index}>
           <p>{message.group_message}</p>
         </div>
+          </div>
       ))}
     </div>
     <form className="message-form" onSubmit={formSub}>
