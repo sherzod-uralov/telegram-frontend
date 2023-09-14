@@ -1,12 +1,8 @@
-import RouterBrowser from './router/RouterBrowser';
-;
+import RouterBrowser from "./Router/RouterBrowser";
 
 function App() {
-
   return (
-    <div className="App">
-      <RouterBrowser/>
-    </div>
+   <RouterBrowser/>
   );
 }
 
